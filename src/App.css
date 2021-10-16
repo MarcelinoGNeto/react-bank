@@ -9,17 +9,3 @@
 .App p {
   text-align: center;
 }
-
-.App-main {
-  display: flex;
-  flex: 1;
-  background-color: aquamarine;
-  align-items: center;
-  justify-content: center;
-}
-
-.App-footer {
-  width: 100%;
-  height: 64px;
-  background-color: chocolate;
-}
