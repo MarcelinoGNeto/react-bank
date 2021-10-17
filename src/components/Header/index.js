@@ -4,8 +4,8 @@ import './styles.css';
 const Header = () => {
  
   return (
-    <header className="Header">
-      <p>Meu App</p>
+    <header className="Header">      
+      <p>G Bank</p>
     </header>
   );
 };

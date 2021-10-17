@@ -1,52 +1,30 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './styles.css'
-
 import Button from '@material-ui/core/Button';
 
-export default class Main extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      contador: 0,
-    };
-  }
 
-  decrementar(){
-    this.setState({
-      contador: this.state.contador - 1,
-    });
-  }
+const Main = () => {
 
-incrementar(){
-    this.setState({
-      contador: this.state.contador + 1,
-    });
-  }
-
-
-  render() {
-    return (
-        <div className="Main">
-            <div>
-            <Button variant="contained" color="primary" onClick={this.decrementar.bind(this)}>-</Button>
-            <Button variant="contained" color="primary" onClick={this.incrementar.bind(this)}>+</Button>
-            </div>
-            <h1>{this.state.contador}</h1>
-        </div>
-    );
-  }
+const minhaRef = useRef();
+const focusInput = () => {
+  minhaRef.current.focus();
 }
 
-/* 
   return (
-
     <div className="Main">
-      <div>
-        <p>Contador: </p>
-      </div>
-      <div>
-        <Button variant="contained" color="primary">Hello World</Button>
-      </div>
+      <ul>
+        <Button variant="contained" color="primary" onClick={focusInput}>
+          Botão no input
+        </Button>
+      </ul>
+      <ul>
+        <label>
+          Valor: 
+        <input type="number" ref={minhaRef} />
+        </label>
+      </ul>
     </div>
-  )
- */
+  );
+};
+
+export default Main;
