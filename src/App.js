@@ -3,8 +3,9 @@ import React from 'react';
 import Header from './components/Header';
 import Main from './components/Main'
 import Footer from './components/Footer';
-import Navbar from './components/Navbar';
+import Routers from './components/Routers';
 import './App.css';
+
 
 
 
@@ -14,7 +15,7 @@ function App() {
 
     <div className="App">
       <Header />
-      <Navbar />
+      <Routers />
       <Main />
       <Footer />
     </div>

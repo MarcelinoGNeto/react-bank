@@ -18,10 +18,8 @@ const focusInput = () => {
         </Button>
       </ul>
       <ul>
-        <label>
-          Valor: 
+        <label>Valor: </label>
         <input type="number" ref={minhaRef} />
-        </label>
       </ul>
     </div>
   );

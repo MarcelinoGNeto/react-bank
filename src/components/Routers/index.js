@@ -8,11 +8,10 @@ import {
     Link
 } from "react-router-dom";
 
-const Navbar = () => {
+const Routers = () => {
 
     return (
-        <navbar className="Navbar">
-
+        <routers className="Routers">
             <div>
                 <Router>
                     <div>
@@ -39,11 +38,8 @@ const Navbar = () => {
                     </div>
                 </Router>
             </div>
-
-            <p>G Bank</p>
-
-        </navbar>
+        </routers>
     );
 };
 
-export default Navbar;
+export default Routers;
